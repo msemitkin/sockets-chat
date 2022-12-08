@@ -29,7 +29,7 @@ public class ChatClient {
             System.out.println("Waiting for updates from the server");
             String line;
             while ((line = serverReader.readLine()) != null) {
-                System.out.println("From server: " + line);
+                System.out.println("> " + line);
             }
         } catch (IOException e) {
             throw new UncheckedIOException(e);
